@@ -1,13 +1,22 @@
 {
-  "originHash" : "49595e2867c2ab508160fc7c509c385e5a60f0c2873c7853d3eafda467f15a2e",
+  "originHash" : "55f2b1c59a7af89b49303fc3d4f48696d2b021b19e8a31f56ef63983d11c0d35",
   "pins" : [
+    {
+      "identity" : "alerttoast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elai950/AlertToast",
+      "state" : {
+        "revision" : "b39252eacd159904afd7d718bba0afabb87f2f2f",
+        "version" : "1.3.9"
+      }
+    },
     {
       "identity" : "dhflatuicolors",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dan-hart/DHFlatUIColors",
       "state" : {
         "branch" : "main",
-        "revision" : "21596c1d6f26e47f178cfccac9a0a1299b25d657"
+        "revision" : "06d42501f1cfe11fdc7b487235db58fbc6742846"
       }
     }
   ],

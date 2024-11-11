@@ -9,29 +9,32 @@ import SwiftUI
 import DHFlatUIColors
 
 struct ContentView: View {
+    @State private var searchText = ""
     @ScaledMetric private var size: CGFloat = 30
+    
+    var filteredPalettes: [DHFlatUIColors.Palette] {
+        if searchText.isEmpty {
+            return DHFlatUIColors.Palette.allCases
+        } else {
+            return DHFlatUIColors.Palette.allCases.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
+        }
+    }
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(DHFlatUIColors.Palette.allCases, id: \.self) { palette in
+                ForEach(filteredPalettes, id: \.self) { palette in
                     NavigationLink(destination: PaletteView(palette: palette)) {
-                        HStack {
+                        VStack(alignment: .leading) {
+                            ColorGridView(palette: palette, allowCopy: true)
                             Text(palette.name)
-                                .font(.headline)
-                            Spacer()
-                            HStack {
-                                ForEach(palette.colors.prefix(3), id: \.name) { color in
-                                    Rectangle()
-                                        .frame(width: size, height: size)
-                                        .foregroundStyle(color.color)
-                                }
-                            }
+                                .font(.title)
                         }
                         .padding()
                     }
                 }
             }
+            .searchable(text: $searchText)
             .navigationTitle("DemoDHFlatUIColors")
         }
     }

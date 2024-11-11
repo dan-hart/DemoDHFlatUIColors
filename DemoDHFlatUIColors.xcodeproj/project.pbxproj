@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52B465EA2CE28D8000B1E8D5 /* DHFlatUIColors in Frameworks */ = {isa = PBXBuildFile; productRef = 52B465E92CE28D8000B1E8D5 /* DHFlatUIColors */; };
+		52F2FCE32CE2A1A9004384AF /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 52F2FCE22CE2A1A9004384AF /* AlertToast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52B465EA2CE28D8000B1E8D5 /* DHFlatUIColors in Frameworks */,
+				52F2FCE32CE2A1A9004384AF /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +73,7 @@
 			name = DemoDHFlatUIColors;
 			packageProductDependencies = (
 				52B465E92CE28D8000B1E8D5 /* DHFlatUIColors */,
+				52F2FCE22CE2A1A9004384AF /* AlertToast */,
 			);
 			productName = DemoDHFlatUIColors;
 			productReference = 52B465D62CE28D3700B1E8D5 /* DemoDHFlatUIColors.app */;
@@ -102,6 +105,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				52B465E82CE28D8000B1E8D5 /* XCRemoteSwiftPackageReference "DHFlatUIColors" */,
+				52F2FCE12CE2A1A9004384AF /* XCRemoteSwiftPackageReference "AlertToast" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 52B465D72CE28D3700B1E8D5 /* Products */;
@@ -358,6 +362,14 @@
 				kind = branch;
 			};
 		};
+		52F2FCE12CE2A1A9004384AF /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -365,6 +377,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 52B465E82CE28D8000B1E8D5 /* XCRemoteSwiftPackageReference "DHFlatUIColors" */;
 			productName = DHFlatUIColors;
+		};
+		52F2FCE22CE2A1A9004384AF /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52F2FCE12CE2A1A9004384AF /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
