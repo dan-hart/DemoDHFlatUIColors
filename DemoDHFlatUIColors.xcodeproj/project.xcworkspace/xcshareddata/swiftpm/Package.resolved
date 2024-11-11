@@ -1,0 +1,15 @@
+{
+  "originHash" : "49595e2867c2ab508160fc7c509c385e5a60f0c2873c7853d3eafda467f15a2e",
+  "pins" : [
+    {
+      "identity" : "dhflatuicolors",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dan-hart/DHFlatUIColors",
+      "state" : {
+        "branch" : "main",
+        "revision" : "21596c1d6f26e47f178cfccac9a0a1299b25d657"
+      }
+    }
+  ],
+  "version" : 3
+}

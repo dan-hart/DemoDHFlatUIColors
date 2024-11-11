@@ -6,16 +6,34 @@
 //
 
 import SwiftUI
+import DHFlatUIColors
 
 struct ContentView: View {
+    @ScaledMetric private var size: CGFloat = 30
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                ForEach(DHFlatUIColors.Palette.allCases, id: \.self) { palette in
+                    NavigationLink(destination: PaletteView(palette: palette)) {
+                        HStack {
+                            Text(palette.name)
+                                .font(.headline)
+                            Spacer()
+                            HStack {
+                                ForEach(palette.colors.prefix(3), id: \.name) { color in
+                                    Rectangle()
+                                        .frame(width: size, height: size)
+                                        .foregroundStyle(color.color)
+                                }
+                            }
+                        }
+                        .padding()
+                    }
+                }
+            }
+            .navigationTitle("DemoDHFlatUIColors")
         }
-        .padding()
     }
 }
 

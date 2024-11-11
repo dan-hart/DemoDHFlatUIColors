@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		52B465EA2CE28D8000B1E8D5 /* DHFlatUIColors in Frameworks */ = {isa = PBXBuildFile; productRef = 52B465E92CE28D8000B1E8D5 /* DHFlatUIColors */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		52B465D62CE28D3700B1E8D5 /* DemoDHFlatUIColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoDHFlatUIColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B465EA2CE28D8000B1E8D5 /* DHFlatUIColors in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = DemoDHFlatUIColors;
 			packageProductDependencies = (
+				52B465E92CE28D8000B1E8D5 /* DHFlatUIColors */,
 			);
 			productName = DemoDHFlatUIColors;
 			productReference = 52B465D62CE28D3700B1E8D5 /* DemoDHFlatUIColors.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 52B465CD2CE28D3700B1E8D5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				52B465E82CE28D8000B1E8D5 /* XCRemoteSwiftPackageReference "DHFlatUIColors" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 52B465D72CE28D3700B1E8D5 /* Products */;
 			projectDirPath = "";
@@ -339,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52B465E82CE28D8000B1E8D5 /* XCRemoteSwiftPackageReference "DHFlatUIColors" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dan-hart/DHFlatUIColors";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52B465E92CE28D8000B1E8D5 /* DHFlatUIColors */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52B465E82CE28D8000B1E8D5 /* XCRemoteSwiftPackageReference "DHFlatUIColors" */;
+			productName = DHFlatUIColors;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52B465CE2CE28D3700B1E8D5 /* Project object */;
 }
